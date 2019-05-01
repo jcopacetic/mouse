@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Reely.io</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/zReely.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/reely-global.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <!-- global header / toolbar -->
+    <header class="dark-bg">
+      <div class="page_center lg flexy">
+        <div class="nav-brand fl-02">
+          <a href="/">REELY.IO</a>
+        </div>
+        <ul class="nav-list fl-09">
+          <li><a href="/">Home</a></li>
+          {% if current_user.is_authenticated %} {% else %}
+          <li><a href="{{ url_for('users.signup') }}">Register</a></li>
+          <li><a href="{{ url_for('users.signin') }}">Sign In</a></li>
+          {% endif %}
+          <li><a href="{{ url_for('blog.tutorials') }}">Tutorials</a></li>
+        </ul>
+        {% if current_user.is_authenticated %}
+        <div class="nav-account fl-01">
+          <div class="nav-account_trigger">
+            <img src="../static/img/profile-placeholder.png" alt="#" />
+          </div>
+          <div class="nav-account_dropdown">
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Your Notes</a></li>
+              <li><a href="#">Notices</a></li>
+              <li><a href="{{ url_for('users.signout') }}">logout</a></li>
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </header>
+
+    <main class="flexy">
+      <div class="fixed-bg light-bg"></div>
+      <div class="sidebar sidebar-left fl-03">
+        <div class="sidebar-stage  medium-bg">
+          {% block sidebar_left %} {% endblock %}
+        </div>
+      </div>
+      <div class="content-area fl-10 p-40_60">
+        <article>
+          {% block main %} {% endblock %}
+        </article>
+      </div>
+      <div class="sidebar sidebar-right medium-bg fl-03">
+        <div class="sidebar-stage  medium-bg">
+          {% block sidebar_right %} {% endblock %}
+        </div>
+      </div>
+    </main>
+
+    <!-- global footer / toolbar -->
+    <footer class="dark-bg">
+      <div class="page_center lg center-text">
+        <p>&copy; 2019. Khaotic Digital LLC, Reely.io</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.js"
+      integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="{{ url_for('static', filename='js/reely-global.js') }}"
+      async
+      defer
+    ></script>
+  </body>
+</html>

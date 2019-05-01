@@ -1,0 +1,300 @@
+{% extends 'layout.html' %} {% block sidebar_left %}
+<nav class="p-10 sidebar-section scroll">
+  <h3 class="sidebar-section_title">Hubspot Tutorials</h3>
+  <ul>
+    <li class="sidebar-active">
+      <a href="#">Group Title 1</a>
+      <ul>
+        <li><a href="#">Article Title 1-1</a></li>
+        <li><a href="#">Article Title 1-2</a></li>
+        <li class="sidebar-active">
+          <a href="#">Article Title 1-3</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Group Title 2</a>
+      <ul>
+        <li><a href="#">Article Title 2-1</a></li>
+        <li><a href="#">Article Title 2-2</a></li>
+        <li><a href="#">Article Title 2-3</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#">Group Title 3</a>
+      <ul>
+        <li><a href="#">Article Title 3-1</a></li>
+        <li><a href="#">Article Title 3-2</a></li>
+        <li><a href="#">Article Title 3-3</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Group Title 4</a>
+      <ul>
+        <li><a href="#">Article Title 4-1</a></li>
+        <li><a href="#">Article Title 4-2</a></li>
+        <li><a href="#">Article Title 4-3</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Group Title 5</a>
+      <ul>
+        <li><a href="#">Article Title 5-1</a></li>
+        <li><a href="#">Article Title 5-2</a></li>
+        <li><a href="#">Article Title 5-3</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div class="sidebar-section p-10 center-text">
+  <h3 class="sidebar-section_title">Support our Content?</h3>
+  <form
+    class="p-10"
+    action="https://www.paypal.com/cgi-bin/webscr"
+    method="post"
+    target="_top"
+  >
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="K4EUSZ8U4C4LG" />
+    <input
+      type="image"
+      src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+      border="0"
+      name="submit"
+      title="PayPal - The safer, easier way to pay online!"
+      alt="Donate with PayPal button"
+    />
+    <img
+      alt=""
+      border="0"
+      src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+      width="1"
+      height="1"
+    />
+  </form>
+</div>
+{% endblock %} {% block main %}
+<div class="content-breadcrumbs">
+  <ul>
+    <li>
+      <a href="#">tutorials<span> -> </span></a>
+    </li>
+    <li>
+      <a href="#">Hubspot Assets<span> -> </span></a>
+    </li>
+    <li>
+      <a href="#">Videos<span> -> </span></a>
+    </li>
+    <li>
+      <a href="#">Working With Youtube Videos in Hubspot<span> -> </span></a>
+    </li>
+  </ul>
+</div>
+<section class="white-bg p-20_40 video-container">
+  <div class="section-header">
+    <h1 class="h1">Working with Youtube Videos in Hubspot</h1>
+    <div class="section-info flexy">
+      <div class="section-author fl-01">
+        <p>
+          By <span>Jonathan Sumner</span> on
+          <span>April 25, 2019</span>
+        </p>
+      </div>
+      <div class="section-share fl-01">
+        <!-- Social Button HTML -->
+        <!-- Twitter -->
+        <a
+          href="http://twitter.com/share?url=<URL>&text=<TEXT>&via=<VIA>"
+          target="_blank"
+          class="share-btn twitter"
+        >
+          <i class="fa fa-twitter"></i>
+        </a>
+        <!-- Reddit (url, title) -->
+        <a
+          href="http://reddit.com/submit?url=<URL>&title=<TITLE>"
+          target="_blank"
+          class="share-btn reddit"
+        >
+          <i class="fa fa-reddit"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a
+          href="http://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>"
+          target="_blank"
+          class="share-btn linkedin"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <!-- Email -->
+        <a
+          href="mailto:?subject=<SUBJECT&body=<BODY>"
+          target="_blank"
+          class="share-btn email"
+        >
+          <i class="fa fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <iframe
+    src="https://www.youtube.com/embed/ScMzIvxBSi4"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</section>
+<section class="white-bg p-20_60 section-notes">
+  <div class="page_center md p-20">
+    <h2>Description:</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+      Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
+      nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
+      tellus sed augue semper porta.
+    </p>
+    <h2>Notes:</h2>
+    <h3>Relavant Links:</h3>
+    <ul>
+      <li><a href="#">Hubspot video Documentation</a></li>
+      <li><a href="#">Youtube iframe Instructions</a></li>
+      <li><a href="#">W3Schools iframe Examples</a></li>
+    </ul>
+    <h3>Repos:</h3>
+    <ul>
+      <li><a href="#">Stripped Youtube iframe code</a></li>
+    </ul>
+  </div>
+</section>
+<section class="white-bg p-20_60">
+  <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+    Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
+    nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
+    tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
+    nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+    per inceptos himenaeos.<img
+      src="../static/img/image_1.jpg"
+      alt="#"
+      style="float: right; padding: 20px 0 20px 20px;"
+    />
+    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Curabitur
+    sodales ligula in libero. Sed dignissim lacinia nunc.
+  </p>
+
+  <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+  <p>
+    <img
+      src="../static/img/image_2.jpg"
+      alt="#"
+      style="float: left; padding: 20px 20px 20px 0;"
+    />
+    Curabitur tortor. Pellentesque nibh.
+    <b>Fusce nec tellus sed augue semper porta</b>. Aenean quam. In scelerisque
+    sem at dolor. <b>Mauris massa</b>. Maecenas mattis. Sed convallis tristique
+    sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis
+    vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia
+    aliquet. Mauris ipsum.
+    <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i>. Nulla metus
+    metus, ullamcorper vel, tincidunt sed, euismod in, nibh.
+  </p>
+
+  <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+  <p>
+    Quisque volutpat condimentum velit.
+    <b>Sed dignissim lacinia nunc</b>. Class aptent taciti sociosqu ad litora
+    torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed
+    lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus
+    ipsum ante quis turpis. Nulla facilisi.
+    <b>Proin ut ligula vel nunc egestas porttitor</b>. Ut fringilla. Suspendisse
+    potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien.
+    Proin quam. Etiam ultrices.
+  </p>
+  <p style="text-align: center">
+    <img
+      src="../static/img/image_3.jpg"
+      alt="#"
+      style="padding: 20px 20px 20px 20px;"
+    />
+  </p>
+  <p>
+    Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod
+    lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa
+    mattis sem, at interdum magna augue eget diam.
+    <b>Ut fringilla</b>. Vestibulum ante ipsum primis in faucibus orci luctus et
+    ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit
+    dolor. <b>Etiam ultrices</b>. Sed non quam. In vel mi sit amet augue congue
+    elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc,
+    viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada
+    tellus.
+  </p>
+
+  <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+  <p>
+    Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est
+    pulvinar ullamcorper. Nulla facilisi. <i>Proin quam</i>. Integer lacinia
+    sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam.
+    <b>Morbi in ipsum sit amet pede facilisis laoreet</b>. Morbi mi. Quisque
+    nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue.
+    Proin sodales libero eget ante. Nulla quam. Aenean laoreet.
+  </p>
+</section>
+
+<section class="white-bg p-40">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+    Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
+    nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
+    tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
+    nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+    per inceptos himenaeos.
+    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Curabitur
+    sodales ligula in libero. Sed dignissim lacinia nunc.
+  </p>
+
+  <p>
+    Curabitur tortor. Pellentesque nibh.
+    <b>Fusce nec tellus sed augue semper porta</b>. Aenean quam. In scelerisque
+    sem at dolor. <b>Mauris massa</b>. Maecenas mattis. Sed convallis tristique
+    sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis
+    vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia
+    aliquet. Mauris ipsum.
+    <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i>. Nulla metus
+    metus, ullamcorper vel, tincidunt sed, euismod in, nibh.
+  </p>
+
+  <p>
+    Quisque volutpat condimentum velit.
+    <b>Sed dignissim lacinia nunc</b>. Class aptent taciti sociosqu ad litora
+    torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed
+    lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus
+    ipsum ante quis turpis. Nulla facilisi.
+    <b>Proin ut ligula vel nunc egestas porttitor</b>. Ut fringilla. Suspendisse
+    potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien.
+    Proin quam. Etiam ultrices.
+  </p>
+
+  <p>
+    Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod
+    lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa
+    mattis sem, at interdum magna augue eget diam.
+    <b>Ut fringilla</b>. Vestibulum ante ipsum primis in faucibus orci luctus et
+    ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit
+    dolor. <b>Etiam ultrices</b>. Sed non quam. In vel mi sit amet augue congue
+    elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc,
+    viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada
+    tellus.
+  </p>
+
+  <p>
+    Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est
+    pulvinar ullamcorper. Nulla facilisi. <i>Proin quam</i>. Integer lacinia
+    sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam.
+    <b>Morbi in ipsum sit amet pede facilisis laoreet</b>. Morbi mi. Quisque
+    nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue.
+    Proin sodales libero eget ante. Nulla quam. Aenean laoreet.
+  </p>
+</section>
+{% endblock %} {% block sidebar_right %} {% endblock %}

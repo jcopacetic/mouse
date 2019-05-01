@@ -1,0 +1,49 @@
+{% extends 'layout.html' %} {% block sidebar_left %}
+{% endblock %} {% block main %}
+
+<section class="content-area white-bg p-20_40">
+<h1 class="center-text">Sign In</h1>
+
+<div class="form-wrap m-tb_40 m-center p-tb_20">
+  <form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <div class="input-wrap p-10_40">
+      {{ form.email.label(class="p-tb_10") }}
+      {% if form.email.errors %}
+        {{ form.email()}}
+        <div class="invalid-feedback">
+          {% for error in form.email.errors %}
+            <span>{{ error }}</span>
+          {% endfor %}
+        </div>
+        {% else %}
+        {{ form.email() }}
+      {% endif %}
+    </div>
+    <div class="input-wrap p-10_40">
+      {{ form.password.label(class="p-tb_10") }}
+      {% if form.password.errors %}
+        {{ form.password()}}
+        <div class="invalid-feedback">
+          {% for error in form.password.errors %}
+            <span>{{ error }}</span>
+          {% endfor %}
+        </div>
+        {% else %}
+        {{ form.password() }}
+      {% endif %}
+    </div>
+    <div class="submit-wrap m-20">
+      {{ form.submit() }}
+    </div>
+    <div class="form-disclaimer m-20">
+      <a href="#">Forgot your password?</a><br>
+      Need an account? <a href="#">Sign up here</a>
+    </div>
+  </form>
+</div>
+</div>
+</section>
+
+{% endblock %} {% block sidebar_right %} {% endblock %}
+

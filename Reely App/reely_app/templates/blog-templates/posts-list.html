@@ -1,0 +1,14 @@
+{% extends 'layout.html' %} {% block sidebar_left %} {% endblock %} {% block
+main %}
+
+<section class="content-area white-bg p-20_40">
+  <h1>Listing Page</h1>
+
+  {% for item in posts %}
+  <p>{{ item.article_title }}</p>
+  <p>{{ item.article_video | safe }}</p>
+  <p>{{ item.article_featured_image.img_src }}</p>
+  {% endfor %}
+</section>
+
+{% endblock %} {% block sidebar_right %} {% endblock %}

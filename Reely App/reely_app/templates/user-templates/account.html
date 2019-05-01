@@ -1,0 +1,10 @@
+{% extends 'layout.html' %} {% block sidebar_left %} {% endblock %} {% block
+main %}
+
+<section class="content-area white-bg p-20_40">
+  <h1>Account</h1>
+  <P><strong>Username: </strong>{{ current_user.username }}</P>
+  <P><strong>email: </strong>{{ current_user.email }}</P>
+</section>
+
+{% endblock %} {% block sidebar_right %} {% endblock %}
